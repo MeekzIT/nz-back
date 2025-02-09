@@ -5,10 +5,25 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 require("dotenv").config();
 const cors = require("cors");
+const swaggerJsdoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
+
+const options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "SHE XLEO QURDULI MENTALITETI DZMA",
+      version: "1.0.0",
+      description: "API documentation for qurdi people",
+    },
+  },
+  apis: ["./routes/*.js"], // Path to your route file
+};
+const specs = swaggerJsdoc(options);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-
+const slider = require("./routes/slider");
 var app = express();
 app.use(cors());
 
@@ -24,6 +39,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/slider", slider);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
