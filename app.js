@@ -24,6 +24,13 @@ const specs = swaggerJsdoc(options);
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const slider = require("./routes/slider");
+const admin = require("./routes/admin");
+const aboutShort = require("./routes/aboutShort");
+const about = require("./routes/aboutUs");
+const offer = require("./routes/offer");
+const contactUs = require("./routes/contactUs");
+const projects = require("./routes/projects");
+const bid = require("./routes/bid");
 var app = express();
 app.use(cors());
 
@@ -40,6 +47,13 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/slider", slider);
+app.use("/admin", admin);
+app.use("/about-short", aboutShort);
+app.use("/about_us", about);
+app.use("/offer", offer);
+app.use("/contact-us", contactUs);
+app.use("/projects", projects);
+app.use("/bid", bid);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 // catch 404 and forward to error handler

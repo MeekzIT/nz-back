@@ -7,6 +7,7 @@ const {
   updateSlider,
   deleteSlider,
 } = require("../controllers/slider");
+const middleWare = require("../middlewares/adminAuthMiddleware");
 
 /**
  * @swagger
@@ -49,7 +50,7 @@ const {
  *       201:
  *         description: Slider created successfully
  */
-router.post("/", createSlider);
+router.post("/", middleWare, createSlider);
 
 /**
  * @swagger
@@ -120,7 +121,7 @@ router.get("/:id", getSliderById);
  *       200:
  *         description: Slider updated successfully
  */
-router.put("/:id", updateSlider);
+router.put("/:id", middleWare, updateSlider);
 
 /**
  * @swagger
@@ -138,6 +139,6 @@ router.put("/:id", updateSlider);
  *       200:
  *         description: Slider deleted successfully
  */
-router.delete("/:id", deleteSlider);
+router.delete("/:id", middleWare, deleteSlider);
 
 module.exports = router;
