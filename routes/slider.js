@@ -11,7 +11,7 @@ const middleWare = require("../middlewares/adminAuthMiddleware");
 
 /**
  * @swagger
- * /sliders:
+ * /slider:
  *   post:
  *     summary: Create a new slider
  *     tags: [Slider]
@@ -54,7 +54,7 @@ router.post("/", middleWare, createSlider);
 
 /**
  * @swagger
- * /sliders:
+ * /slider:
  *   get:
  *     summary: Get all sliders
  *     tags: [Slider]
@@ -66,7 +66,7 @@ router.get("/", getAllSliders);
 
 /**
  * @swagger
- * /sliders/{id}:
+ * /slider/{id}:
  *   get:
  *     summary: Get slider by ID
  *     tags: [Slider]
@@ -84,7 +84,7 @@ router.get("/:id", getSliderById);
 
 /**
  * @swagger
- * /sliders/{id}:
+ * /slider/edit/{id}:
  *   put:
  *     summary: Update slider by ID
  *     tags: [Slider]
@@ -121,11 +121,11 @@ router.get("/:id", getSliderById);
  *       200:
  *         description: Slider updated successfully
  */
-router.put("/:id", middleWare, updateSlider);
+router.put("/edit/:id", middleWare, updateSlider);
 
 /**
  * @swagger
- * /sliders/{id}:
+ * /slider/destroy/{id}:
  *   delete:
  *     summary: Delete slider by ID
  *     tags: [Slider]
@@ -139,6 +139,6 @@ router.put("/:id", middleWare, updateSlider);
  *       200:
  *         description: Slider deleted successfully
  */
-router.delete("/:id", middleWare, deleteSlider);
+router.delete("destroy/:id", middleWare, deleteSlider);
 
 module.exports = router;

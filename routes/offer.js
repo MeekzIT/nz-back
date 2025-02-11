@@ -20,7 +20,7 @@ const router = Router();
 
 /**
  * @swagger
- * /offers:
+ * /offer:
  *   post:
  *     summary: Create a new offer
  *     tags: [Offers]
@@ -42,11 +42,11 @@ const router = Router();
  *       500:
  *         description: Failed to create offer
  */
-router.post("/offers", authMiddleware, createOffer);
+router.post("/", authMiddleware, createOffer);
 
 /**
  * @swagger
- * /offers:
+ * /offer:
  *   get:
  *     summary: Get all offers
  *     tags: [Offers]
@@ -56,11 +56,11 @@ router.post("/offers", authMiddleware, createOffer);
  *       500:
  *         description: Failed to fetch offers
  */
-router.get("/offers", getAllOffers);
+router.get("/", getAllOffers);
 
 /**
  * @swagger
- * /offers/{id}:
+ * /offer/{id}:
  *   get:
  *     summary: Get an offer by ID
  *     tags: [Offers]
@@ -79,11 +79,11 @@ router.get("/offers", getAllOffers);
  *       500:
  *         description: Failed to fetch offer
  */
-router.get("/offers/:id", getOfferById);
+router.get("/:id", getOfferById);
 
 /**
  * @swagger
- * /offers/{id}:
+ * /offer/edit/{id}:
  *   put:
  *     summary: Update an offer by ID
  *     tags: [Offers]
@@ -114,11 +114,11 @@ router.get("/offers/:id", getOfferById);
  *       500:
  *         description: Failed to update offer
  */
-router.put("/offers/:id", authMiddleware, updateOffer);
+router.put("/edit/:id", authMiddleware, updateOffer);
 
 /**
  * @swagger
- * /offers/{id}:
+ * /offer/destroy/{id}:
  *   delete:
  *     summary: Delete an offer by ID
  *     tags: [Offers]
@@ -139,6 +139,6 @@ router.put("/offers/:id", authMiddleware, updateOffer);
  *       500:
  *         description: Failed to delete offer
  */
-router.delete("/offers/:id", authMiddleware, deleteOffer);
+router.delete("/destroy/:id", authMiddleware, deleteOffer);
 
 module.exports = router;

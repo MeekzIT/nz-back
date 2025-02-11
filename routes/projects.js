@@ -60,7 +60,7 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware"); // Optiona
  *       201:
  *         description: Project created successfully
  */
-router.post("/projects", authMiddleware, createProject);
+router.post("/", authMiddleware, createProject);
 
 /**
  * @swagger
@@ -72,7 +72,7 @@ router.post("/projects", authMiddleware, createProject);
  *       200:
  *         description: List of all projects
  */
-router.get("/projects", getAllProjects);
+router.get("/", getAllProjects);
 
 /**
  * @swagger
@@ -92,11 +92,11 @@ router.get("/projects", getAllProjects);
  *       404:
  *         description: Project not found
  */
-router.get("/projects/:id", getProjectById);
+router.get("/:id", getProjectById);
 
 /**
  * @swagger
- * /projects/{id}:
+ * /projects/edit/{id}:
  *   put:
  *     summary: Update a project by ID
  *     tags: [Projects]
@@ -153,11 +153,11 @@ router.get("/projects/:id", getProjectById);
  *       404:
  *         description: Project not found
  */
-router.put("/projects/:id", authMiddleware, updateProject);
+router.put("/edit/:id", authMiddleware, updateProject);
 
 /**
  * @swagger
- * /projects/{id}:
+ * /projects/destroy/{id}:
  *   delete:
  *     summary: Delete a project by ID
  *     tags: [Projects]
@@ -173,6 +173,6 @@ router.put("/projects/:id", authMiddleware, updateProject);
  *       404:
  *         description: Project not found
  */
-router.delete("/projects/:id", authMiddleware, deleteProject);
+router.delete("/destroy/:id", authMiddleware, deleteProject);
 
 module.exports = router;

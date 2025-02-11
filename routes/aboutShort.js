@@ -12,7 +12,7 @@ const router = Router();
 
 /**
  * @swagger
- * /create:
+ * /about-short/create:
  *   post:
  *     summary: Create a new About Us Short record
  *     tags: [AboutUsShort]
@@ -45,7 +45,7 @@ router.post("/create", authMiddleware, createAboutUsShort);
 
 /**
  * @swagger
- * /:
+ * /about-short:
  *   get:
  *     summary: Get all About Us Short records
  *     tags: [AboutUsShort]
@@ -57,7 +57,7 @@ router.get("/", getAllAboutUsShort);
 
 /**
  * @swagger
- * /single/{id}:
+ * /about-short/single/{id}:
  *   get:
  *     summary: Get a specific About Us Short record by ID
  *     tags: [AboutUsShort]
@@ -77,7 +77,7 @@ router.get("/single/:id", getAboutUsShortById);
 
 /**
  * @swagger
- * /edit/{id}:
+ * /about-short/edit/{id}:
  *   put:
  *     summary: Update an About Us Short record by ID
  *     tags: [AboutUsShort]

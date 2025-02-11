@@ -11,7 +11,7 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
 
 /**
  * @swagger
- * /contacts:
+ * /contact-us:
  *   post:
  *     summary: Create a new contact
  *     tags: [Contact-us]
@@ -36,11 +36,11 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
  *       201:
  *         description: Contact created successfully
  */
-router.post("/contacts", createContact);
+router.post("/", createContact);
 
 /**
  * @swagger
- * /contacts:
+ * /contact-us:
  *   get:
  *     summary: Get all contacts
  *     tags: [Contact-us]
@@ -48,11 +48,11 @@ router.post("/contacts", createContact);
  *       200:
  *         description: List of all contacts
  */
-router.get("/contacts", authMiddleware, getAllContacts);
+router.get("/", authMiddleware, getAllContacts);
 
 /**
  * @swagger
- * /contacts/{id}:
+ * /contact-us/{id}:
  *   get:
  *     summary: Get a contact by ID
  *     tags: [Contact-us]
@@ -68,11 +68,11 @@ router.get("/contacts", authMiddleware, getAllContacts);
  *       404:
  *         description: Contact not found
  */
-router.get("/contacts/:id", authMiddleware, getContactById);
+router.get("/:id", authMiddleware, getContactById);
 
 /**
  * @swagger
- * /contacts/{id}:
+ * /contact-us/edit/{id}:
  *   put:
  *     summary: Update a contact by ID
  *     tags: [Contact-us]
@@ -105,11 +105,11 @@ router.get("/contacts/:id", authMiddleware, getContactById);
  *       404:
  *         description: Contact not found
  */
-router.put("/contacts/:id", authMiddleware, updateContact);
+router.put("/edit/:id", authMiddleware, updateContact);
 
 /**
  * @swagger
- * /contacts/{id}:
+ * /contact-us/destroy/{id}:
  *   delete:
  *     summary: Delete a contact by ID
  *     tags: [Contact-us]
@@ -125,6 +125,6 @@ router.put("/contacts/:id", authMiddleware, updateContact);
  *       404:
  *         description: Contact not found
  */
-router.delete("/contacts/:id", authMiddleware, deleteContact);
+router.delete("/destroy/:id", authMiddleware, deleteContact);
 
 module.exports = router;

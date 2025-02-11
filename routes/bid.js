@@ -11,7 +11,7 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
 
 /**
  * @swagger
- * /bids:
+ * /bid:
  *   post:
  *     summary: Create a new bid
  *     tags: [Bids]
@@ -32,11 +32,11 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
  *       201:
  *         description: Bid created successfully
  */
-router.post("/bids", createBid);
+router.post("/", createBid);
 
 /**
  * @swagger
- * /bids:
+ * /bid:
  *   get:
  *     summary: Get all bids
  *     tags: [Bids]
@@ -44,11 +44,11 @@ router.post("/bids", createBid);
  *       200:
  *         description: List of all bids
  */
-router.get("/bids", authMiddleware, getAllBids);
+router.get("/", authMiddleware, getAllBids);
 
 /**
  * @swagger
- * /bids/{id}:
+ * /bid/{id}:
  *   get:
  *     summary: Get a bid by ID
  *     tags: [Bids]
@@ -64,11 +64,11 @@ router.get("/bids", authMiddleware, getAllBids);
  *       404:
  *         description: Bid not found
  */
-router.get("/bids/:id", authMiddleware, getBidById);
+router.get("/:id", authMiddleware, getBidById);
 
 /**
  * @swagger
- * /bids/{id}:
+ * /bid/edit/{id}:
  *   put:
  *     summary: Update a bid by ID
  *     tags: [Bids]
@@ -97,11 +97,11 @@ router.get("/bids/:id", authMiddleware, getBidById);
  *       404:
  *         description: Bid not found
  */
-router.put("/bids/:id", authMiddleware, updateBid);
+router.put("/edit/:id", authMiddleware, updateBid);
 
 /**
  * @swagger
- * /bids/{id}:
+ * /bid/destroy/{id}:
  *   delete:
  *     summary: Delete a bid by ID
  *     tags: [Bids]
@@ -117,6 +117,6 @@ router.put("/bids/:id", authMiddleware, updateBid);
  *       404:
  *         description: Bid not found
  */
-router.delete("/bids/:id", authMiddleware, deleteBid);
+router.delete("/destroy/:id", authMiddleware, deleteBid);
 
 module.exports = router;

@@ -12,7 +12,7 @@ const router = Router();
 
 /**
  * @swagger
- * /:
+ * /about-us:
  *   post:
  *     summary: Create a new About Us record
  *     tags: [AboutUs]
@@ -59,7 +59,7 @@ router.post("/", authMiddleware, createAboutUs);
 
 /**
  * @swagger
- * /:
+ * /about-us:
  *   get:
  *     summary: Get all About Us records
  *     tags: [AboutUs]
@@ -71,7 +71,7 @@ router.get("/", getAllAboutUs);
 
 /**
  * @swagger
- * /{id}:
+ * /about-us/{id}:
  *   get:
  *     summary: Get a specific About Us record by ID
  *     tags: [AboutUs]
@@ -91,7 +91,7 @@ router.get("/:id", getAboutUsById);
 
 /**
  * @swagger
- * /edit/{id}:
+ * /about-us/edit/{id}:
  *   put:
  *     summary: Update an About Us record by ID
  *     tags: [AboutUs]
@@ -146,7 +146,7 @@ router.put("/edit/:id", authMiddleware, updateAboutUs);
 
 /**
  * @swagger
- * /destroy/{id}:
+ * /about-us/destroy/{id}:
  *   delete:
  *     summary: Delete an About Us record by ID
  *     tags: [AboutUs]
