@@ -49,7 +49,7 @@ app.use("/users", usersRouter);
 app.use("/slider", slider);
 app.use("/admin", admin);
 app.use("/about-short", aboutShort);
-app.use("/about_us", about);
+app.use("/about-us", about);
 app.use("/offer", offer);
 app.use("/contact-us", contactUs);
 app.use("/projects", projects);
