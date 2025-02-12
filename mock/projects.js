@@ -1,6 +1,5 @@
 const mockProjects = [
   {
-    id: 1,
     titleAm: "Նախագիծ 1",
     titleRu: "Проект 1",
     titleEn: "Project 1",
@@ -20,7 +19,6 @@ const mockProjects = [
     image_24: "image1_24.jpg",
   },
   {
-    id: 2,
     titleAm: "Նախագիծ 2",
     titleRu: "Проект 2",
     titleEn: "Project 2",

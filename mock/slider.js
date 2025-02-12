@@ -1,6 +1,5 @@
 const sliders = [
   {
-    id: 1,
     image:
       "https://www.commercialcafe.com/blog/wp-content/uploads/sites/10/2020/09/most-popular-office-buildings-featured.jpg",
     mobile_image:
@@ -13,7 +12,6 @@ const sliders = [
     subTitleEn: "Subtitle EN 1",
   },
   {
-    id: 2,
     image:
       "https://www.shutterstock.com/image-photo/modern-city-illustration-isolated-white-260nw-1836519439.jpg",
     mobile_image:
