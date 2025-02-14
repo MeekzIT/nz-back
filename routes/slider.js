@@ -139,6 +139,6 @@ router.put("/edit/:id", middleWare, updateSlider);
  *       200:
  *         description: Slider deleted successfully
  */
-router.delete("destroy/:id", middleWare, deleteSlider);
+router.delete("/destroy/:id", middleWare, deleteSlider);
 
 module.exports = router;
