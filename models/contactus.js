@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       phone: DataTypes.STRING,
       email: DataTypes.STRING,
       message: DataTypes.STRING(1234),
+      isReaded: DataTypes.BOOLEAN,
     },
     {
       sequelize,

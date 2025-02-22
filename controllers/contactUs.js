@@ -20,7 +20,9 @@ const createContact = async (req, res) => {
 // Get all contact entries
 const getAllContacts = async (req, res) => {
   try {
-    const contacts = await ContactUs.findAll();
+    const contacts = await ContactUs.findAll({
+      order: [["createdAt", "DESC"]],
+    });
     res.status(200).json(contacts);
   } catch (error) {
     res.status(500).json({ error: error.message });
