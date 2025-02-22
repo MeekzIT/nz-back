@@ -3,7 +3,7 @@ const { Projects } = require("../models");
 // Create a new project
 const createProject = async (req, res) => {
   try {
-    const project = await Projects.create(req.body);
+    const project = await Projects.create({ ...req.body, isComing: false });
     res.status(201).json(project);
   } catch (error) {
     res.status(500).json({ error: error.message });

@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       image_22: DataTypes.STRING(1234),
       image_23: DataTypes.STRING(1234),
       image_24: DataTypes.STRING(1234),
+      isComing: DataTypes.BOOLEAN,
     },
     {
       sequelize,

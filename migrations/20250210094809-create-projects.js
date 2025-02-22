@@ -60,6 +60,7 @@ module.exports = {
       image_24: {
         type: Sequelize.STRING(1234),
       },
+      isComing: Sequelize.BOOLEAN,
       createdAt: {
         allowNull: true,
         type: Sequelize.DATE,
