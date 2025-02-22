@@ -48,12 +48,19 @@ const getContactById = async (req, res) => {
 const updateContact = async (req, res) => {
   try {
     const { id } = req.params;
-    const { firstName, lastName, phone, email, message } = req.body;
+    const { firstName, lastName, phone, email, message, isReaded } = req.body;
     const contact = await ContactUs.findByPk(id);
     if (!contact) {
       return res.status(404).json({ error: "Contact not found" });
     }
-    await contact.update({ firstName, lastName, phone, email, message });
+    await contact.update({
+      firstName,
+      lastName,
+      phone,
+      email,
+      message,
+      isReaded,
+    });
     res.status(200).json(contact);
   } catch (error) {
     res.status(500).json({ error: error.message });
