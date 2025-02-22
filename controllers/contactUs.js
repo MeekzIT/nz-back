@@ -10,6 +10,7 @@ const createContact = async (req, res) => {
       phone,
       email,
       message,
+      isReaded: false,
     });
     res.status(201).json(newContact);
   } catch (error) {
