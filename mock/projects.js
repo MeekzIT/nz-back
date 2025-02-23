@@ -17,6 +17,7 @@ const mockProjects = [
     image_22: "image1_22.jpg",
     image_23: "image1_23.jpg",
     image_24: "image1_24.jpg",
+    isComing: false,
   },
   {
     titleAm: "Նախագիծ 2",
@@ -36,6 +37,7 @@ const mockProjects = [
     image_22: "image2_22.jpg",
     image_23: "image2_23.jpg",
     image_24: "image2_24.jpg",
+    isComing: false,
   },
 ];
 
