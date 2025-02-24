@@ -32,7 +32,7 @@ router.get("/", getAll);
 router.get("/available", getAppartementCountByFloor);
 /**
  * @swagger
- * /projects/edit/{id}:
+ * /schema/edit/{id}:
  *   post:
  *     summary: Update a project by ID
  *     tags: [Schema]
@@ -59,6 +59,6 @@ router.get("/available", getAppartementCountByFloor);
  *       404:
  *         description: Project not found
  */
-router.post("/edit", edit);
+router.post("/edit/:id", edit);
 
 module.exports = router;
