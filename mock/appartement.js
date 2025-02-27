@@ -126,7 +126,7 @@ const data = [
     square_meter: "82.22",
     image_black_white: `/images/apparts-schema/d.png`,
     image_design: `/images/apparts/d.png`,
-    coordinates: "3118,551,4031,551,4031,1199,3875,1194,3835,1174,3128,11696",
+    coordinates: "3118,551,4031,551,4031,1199,3875,1194,3835,1174,3128,1169",
   },
   {
     in_stock: true,
