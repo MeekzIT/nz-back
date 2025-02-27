@@ -44,7 +44,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use("/images/floor", express.static(path.join(__dirname, "images/floor")));
+app.use(
+  "/images/apparts",
+  express.static(path.join(__dirname, "images/apparts"))
+);
+app.use(
+  "/images/apparts-schema",
+  express.static(path.join(__dirname, "images/apparts-schema"))
+);
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/slider", slider);
@@ -58,6 +66,9 @@ app.use("/bid", bid);
 app.use("/schema", schema);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
+app.get("/test-image", (req, res) => {
+  res.sendFile(path.join(__dirname, "images/floor/floor_3.jpg"));
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

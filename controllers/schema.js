@@ -2,15 +2,26 @@ const { Floor, Appartement, AppartementData } = require("../models");
 
 const getAll = async (req, res) => {
   try {
-    const floor = await Floor.findAll({
+    const floors = await Floor.findAll({
       include: [
         {
           model: Appartement,
           include: [{ model: AppartementData }],
         },
       ],
+      order: [["order", "ASC"]],
     });
-    res.status(200).json(floor);
+
+    const baseUrl = `${req.protocol}://${req.get("host")}/images/floor/`;
+
+    const floorsWithImages = floors.map((floor) => ({
+      ...floor.toJSON(),
+      imageUrl: floor.image_scheme
+        ? `${baseUrl}${floor.image_scheme}.jpg`
+        : null,
+    }));
+
+    res.status(200).json(floorsWithImages);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -23,7 +34,7 @@ const getAppartementCountByFloor = async (req, res) => {
         {
           model: Appartement,
           attributes: ["id", "in_stock"],
-          where: { in_stock: true }, // Фильтруем только доступные квартиры
+          where: { in_stock: true },
         },
       ],
     });
