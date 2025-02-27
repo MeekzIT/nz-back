@@ -2,7 +2,10 @@ const { Floor, Appartement, AppartementData } = require("../models");
 
 const getAll = async (req, res) => {
   try {
+    const { id } = req.params;
+    const whereCondition = id ? { id } : {};
     const floors = await Floor.findAll({
+      where: whereCondition,
       include: [
         {
           model: Appartement,
