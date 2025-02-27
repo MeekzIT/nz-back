@@ -17,7 +17,7 @@ const getAll = async (req, res) => {
     const floorsWithImages = floors.map((floor) => ({
       ...floor.toJSON(),
       imageUrl: floor.image_scheme
-        ? `${baseUrl}${floor.image_scheme}.jpg`
+        ? `${baseUrl}${floor.image_scheme}.png`
         : null,
     }));
 
