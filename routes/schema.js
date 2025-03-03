@@ -19,7 +19,6 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
  *         description: Successfully retrieved records
  */
 router.get("/", getAll);
-router.get("/:id", getAll);
 
 /**
  * @swagger
