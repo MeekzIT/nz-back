@@ -3,7 +3,7 @@ const { Floor, Appartement, AppartementData } = require("../models");
 const getAll = async (req, res) => {
   try {
     const { id } = req.params;
-    const whereCondition = id ? { id } : {};
+    const whereCondition = id ? { floor: id } : {};
     const floors = await Floor.findAll({
       where: whereCondition,
       include: [
@@ -68,8 +68,28 @@ const edit = async (req, res) => {
   }
 };
 
+const getAppartement = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const floors = await Appartement.findOne({
+      where: { id },
+      include: [
+        {
+          model: AppartementData,
+        },
+      ],
+    });
+
+    res.status(200).json(floors);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   getAll,
   getAppartementCountByFloor,
   edit,
+  getAppartement,
 };

@@ -4,6 +4,7 @@ const {
   getAll,
   getAppartementCountByFloor,
   edit,
+  getAppartement,
 } = require("../controllers/schema");
 const authMiddleware = require("../middlewares/adminAuthMiddleware");
 
@@ -18,6 +19,19 @@ const authMiddleware = require("../middlewares/adminAuthMiddleware");
  *         description: Successfully retrieved records
  */
 router.get("/", getAll);
+router.get("/:id", getAll);
+
+/**
+ * @swagger
+ * /schema/single/:id:
+ *   get:
+ *     summary: Get all Schema records
+ *     tags: [Schema]
+ *     responses:
+ *       200:
+ *         description: Successfully retrieved records
+ */
+router.get("/single/:id", getAppartement);
 
 /**
  * @swagger
