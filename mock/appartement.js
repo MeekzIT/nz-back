@@ -499,8 +499,7 @@ const data = [
     square_meter: "297.76",
     image_black_white: `/images/apparts-schema/l.png`,
     image_design: `/images/apparts/l.png`,
-    coordinates:
-      "1362,2653,1357,1650,2659,1645,2666,2045,2517,2049,2517,2673,1919,2668,1919,2499,1692,2499,1692,2649",
+    coordinates: "310,1094,304,580,963,584,960,779,889,779,887,1093",
   },
   {
     in_stock: true,
@@ -511,7 +510,7 @@ const data = [
     image_black_white: `/images/apparts-schema/x.png`,
     image_design: `/images/apparts/x.png`,
     coordinates:
-      "2162,1642,2162,1494,2315,1490,2315,552,3223,556,3227,1196,3075,1205,3066,1667,2918,1671,2918,1874,2666,1886,2662,1647",
+      "716,580,716,507,793,507,790,35,1246,36,1244,361,1166,361,1163,596,1090,598,1092,702,962,703,962,585",
   },
   {
     in_stock: true,
@@ -521,7 +520,8 @@ const data = [
     square_meter: "64.57",
     image_black_white: `/images/apparts-schema/g.png`,
     image_design: `/images/apparts/g.png`,
-    coordinates: "1349,557,1910,545,1910,669,1943,706,1943,1346,1353,1350",
+    coordinates:
+      "307,40,591,39,587,101,602,115,602,346,572,348,571,433,318,435,320,111,307,102",
   },
 ];
 
