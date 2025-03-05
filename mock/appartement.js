@@ -9,8 +9,7 @@ const data = [
     square_meter: "88.35",
     image_black_white: `/images/apparts-schema/a.png`,
     image_design: `/images/apparts/a.png`,
-    coordinates:
-      "902,556,1413,561,1413,1164,1499,1174,1499,1640,1098,1645,1083,1681,902,1676",
+    coordinates: "111,628,29,633,26,72,284,73,284,379,326,381,323,620,123,620",
   },
   {
     in_stock: true,
@@ -20,7 +19,7 @@ const data = [
     square_meter: "59.39",
     image_black_white: `/images/apparts-schema/b.png`,
     image_design: `/images/apparts/b.png`,
-    coordinates: "1674,561,2166,551,2166,677,2181,707,2181,1349,1669,1349",
+    coordinates: "410,75,414,467,670,467,672,137,656,138,656,72",
   },
   {
     in_stock: true,
@@ -30,7 +29,8 @@ const data = [
     square_meter: "64.57",
     image_black_white: `/images/apparts-schema/g.png`,
     image_design: `/images/apparts/g.png`,
-    coordinates: "2176,556,2181,682,2191,1344,2752,1349,2752,702,2722,561",
+    coordinates:
+      "656,72,658,134,670,136,672,466,921,467,921,383,952,378,955,138,938,136,938,72",
   },
   {
     in_stock: true,
@@ -40,7 +40,7 @@ const data = [
     square_meter: "82.22",
     image_black_white: `/images/apparts-schema/d.png`,
     image_design: `/images/apparts/d.png`,
-    coordinates: "3118,551,4031,551,4031,1199,3875,1194,3835,1174,3128,1169",
+    coordinates: "1138,70,1141,381,1515,381,1517,395,1594,389,1591,72",
   },
   {
     in_stock: true,
@@ -51,7 +51,7 @@ const data = [
     image_black_white: `/images/apparts-schema/e.png`,
     image_design: `/images/apparts/e.png`,
     coordinates:
-      "3123,1179,3835,1179,3870,1204,3875,1676,3725,1681,3720,1876,3459,1866,3459,1640,2973,1635,2963,1495,3123,1490",
+      "1074,616,1070,541,1143,543,1141,382,1512,381,1516,630,1442,633,1439,730,1308,732,1308,617",
   },
   {
     in_stock: true,
@@ -62,7 +62,7 @@ const data = [
     image_black_white: `/images/apparts-schema/z.png`,
     image_design: `/images/apparts/z.png`,
     coordinates:
-      "2511,1645,3449,1650,3464,2052,3319,2042,3319,2654,2727,2649,2717,2499,2506,2504",
+      "828,616,1306,617,1309,815,1240,815,1241,1124,939,1121,935,1045,828,1042",
   },
   {
     in_stock: true,
@@ -72,7 +72,7 @@ const data = [
     square_meter: "122.57",
     image_black_white: `/images/apparts-schema/ee.png`,
     image_design: `/images/apparts/ee.png`,
-    coordinates: "1689,1655,2511,1640,2501,2654,1950,2659,1950,2494,1674,2494",
+    coordinates: "412,616,828,616,829,1123,548,1127,547,1045,412,1041",
   },
   {
     in_stock: true,
@@ -82,7 +82,7 @@ const data = [
     square_meter: "88.70",
     image_black_white: `/images/apparts-schema/y.png`,
     image_design: `/images/apparts/y.png`,
-    coordinates: "922,2037,1103,1661,1654,1650,1654,2659,1078,2654,1078,2032",
+    coordinates: "33,810,125,616,403,620,400,1123,115,1123,115,807",
   },
 
   //////???///////////--------------------------------------------- floor 4 --------------------------------------------------
@@ -95,8 +95,7 @@ const data = [
     square_meter: "88.35",
     image_black_white: `/images/apparts-schema/a.png`,
     image_design: `/images/apparts/a.png`,
-    coordinates:
-      "902,556,1413,561,1413,1164,1499,1174,1499,1640,1098,1645,1083,1681,902,1676",
+    coordinates: "111,628,29,633,26,72,284,73,284,379,326,381,323,620,123,620",
   },
   {
     in_stock: true,
@@ -106,7 +105,7 @@ const data = [
     square_meter: "59.39",
     image_black_white: `/images/apparts-schema/b.png`,
     image_design: `/images/apparts/b.png`,
-    coordinates: "1674,561,2166,551,2166,677,2181,707,2181,1349,1669,1349",
+    coordinates: "410,75,414,467,670,467,672,137,656,138,656,72",
   },
   {
     in_stock: true,
@@ -116,7 +115,8 @@ const data = [
     square_meter: "64.57",
     image_black_white: `/images/apparts-schema/g.png`,
     image_design: `/images/apparts/g.png`,
-    coordinates: "2176,556,2181,682,2191,1344,2752,1349,2752,702,2722,561",
+    coordinates:
+      "656,72,658,134,670,136,672,466,921,467,921,383,952,378,955,138,938,136,938,72",
   },
   {
     in_stock: true,
@@ -126,7 +126,7 @@ const data = [
     square_meter: "82.22",
     image_black_white: `/images/apparts-schema/d.png`,
     image_design: `/images/apparts/d.png`,
-    coordinates: "3118,551,4031,551,4031,1199,3875,1194,3835,1174,3128,1169",
+    coordinates: "1138,70,1141,381,1515,381,1517,395,1594,389,1591,72",
   },
   {
     in_stock: true,
@@ -137,7 +137,7 @@ const data = [
     image_black_white: `/images/apparts-schema/e.png`,
     image_design: `/images/apparts/e.png`,
     coordinates:
-      "3123,1179,3835,1179,3870,1204,3875,1676,3725,1681,3720,1876,3459,1866,3459,1640,2973,1635,2963,1495,3123,1490",
+      "1074,616,1070,541,1143,543,1141,382,1512,381,1516,630,1442,633,1439,730,1308,732,1308,617",
   },
   {
     in_stock: true,
@@ -148,7 +148,7 @@ const data = [
     image_black_white: `/images/apparts-schema/z.png`,
     image_design: `/images/apparts/z.png`,
     coordinates:
-      "2511,1645,3449,1650,3464,2052,3319,2042,3319,2654,2727,2649,2717,2499,2506,2504",
+      "828,616,1306,617,1309,815,1240,815,1241,1124,939,1121,935,1045,828,1042",
   },
   {
     in_stock: true,
@@ -158,7 +158,7 @@ const data = [
     square_meter: "122.57",
     image_black_white: `/images/apparts-schema/ee.png`,
     image_design: `/images/apparts/ee.png`,
-    coordinates: "1689,1655,2511,1640,2501,2654,1950,2659,1950,2494,1674,2494",
+    coordinates: "412,616,828,616,829,1123,548,1127,547,1045,412,1041",
   },
   {
     in_stock: true,
@@ -168,7 +168,7 @@ const data = [
     square_meter: "88.70",
     image_black_white: `/images/apparts-schema/y.png`,
     image_design: `/images/apparts/y.png`,
-    coordinates: "922,2037,1103,1661,1654,1650,1654,2659,1078,2654,1078,2032",
+    coordinates: "33,810,125,616,403,620,400,1123,115,1123,115,807",
   },
 
   //////???///////////--------------------------------------------- floor 5 --------------------------------------------------
@@ -181,8 +181,7 @@ const data = [
     square_meter: "88.35",
     image_black_white: `/images/apparts-schema/a.png`,
     image_design: `/images/apparts/a.png`,
-    coordinates:
-      "902,556,1413,561,1413,1164,1499,1174,1499,1640,1098,1645,1083,1681,902,1676",
+    coordinates: "111,628,29,633,26,72,284,73,284,379,326,381,323,620,123,620",
   },
   {
     in_stock: true,
@@ -192,7 +191,7 @@ const data = [
     square_meter: "59.39",
     image_black_white: `/images/apparts-schema/b.png`,
     image_design: `/images/apparts/b.png`,
-    coordinates: "1674,561,2166,551,2166,677,2181,707,2181,1349,1669,1349",
+    coordinates: "410,75,414,467,670,467,672,137,656,138,656,72",
   },
   {
     in_stock: true,
@@ -202,7 +201,8 @@ const data = [
     square_meter: "64.57",
     image_black_white: `/images/apparts-schema/g.png`,
     image_design: `/images/apparts/g.png`,
-    coordinates: "2176,556,2181,682,2191,1344,2752,1349,2752,702,2722,561",
+    coordinates:
+      "656,72,658,134,670,136,672,466,921,467,921,383,952,378,955,138,938,136,938,72",
   },
   {
     in_stock: true,
@@ -212,7 +212,7 @@ const data = [
     square_meter: "82.22",
     image_black_white: `/images/apparts-schema/d.png`,
     image_design: `/images/apparts/d.png`,
-    coordinates: "3118,551,4031,551,4031,1199,3875,1194,3835,1174,3128,1169",
+    coordinates: "1138,70,1141,381,1515,381,1517,395,1594,389,1591,72",
   },
   {
     in_stock: true,
@@ -223,7 +223,7 @@ const data = [
     image_black_white: `/images/apparts-schema/e.png`,
     image_design: `/images/apparts/e.png`,
     coordinates:
-      "3123,1179,3835,1179,3870,1204,3875,1676,3725,1681,3720,1876,3459,1866,3459,1640,2973,1635,2963,1495,3123,1490",
+      "1074,616,1070,541,1143,543,1141,382,1512,381,1516,630,1442,633,1439,730,1308,732,1308,617",
   },
   {
     in_stock: true,
@@ -234,7 +234,7 @@ const data = [
     image_black_white: `/images/apparts-schema/z.png`,
     image_design: `/images/apparts/z.png`,
     coordinates:
-      "2511,1645,3449,1650,3464,2052,3319,2042,3319,2654,2727,2649,2717,2499,2506,2504",
+      "828,616,1306,617,1309,815,1240,815,1241,1124,939,1121,935,1045,828,1042",
   },
   {
     in_stock: true,
@@ -244,7 +244,7 @@ const data = [
     square_meter: "122.57",
     image_black_white: `/images/apparts-schema/ee.png`,
     image_design: `/images/apparts/ee.png`,
-    coordinates: "1689,1655,2511,1640,2501,2654,1950,2659,1950,2494,1674,2494",
+    coordinates: "412,616,828,616,829,1123,548,1127,547,1045,412,1041",
   },
   {
     in_stock: true,
@@ -254,7 +254,7 @@ const data = [
     square_meter: "88.70",
     image_black_white: `/images/apparts-schema/y.png`,
     image_design: `/images/apparts/y.png`,
-    coordinates: "922,2037,1103,1661,1654,1650,1654,2659,1078,2654,1078,2032",
+    coordinates: "33,810,125,616,403,620,400,1123,115,1123,115,807",
   },
 
   //////???///////////--------------------------------------------- floor 6 --------------------------------------------------
