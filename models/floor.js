@@ -16,6 +16,8 @@ module.exports = (sequelize, DataTypes) => {
       floor: DataTypes.INTEGER,
       order: DataTypes.INTEGER,
       image_scheme: DataTypes.STRING,
+      width: DataTypes.STRING,
+      height: DataTypes.STRING,
     },
     {
       sequelize,

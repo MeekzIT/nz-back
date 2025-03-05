@@ -18,6 +18,12 @@ module.exports = {
       image_scheme: {
         type: Sequelize.STRING,
       },
+      width: {
+        type: Sequelize.STRING,
+      },
+      height: {
+        type: Sequelize.STRING,
+      },
       createdAt: {
         allowNull: true,
         type: Sequelize.DATE,
