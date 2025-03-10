@@ -3,7 +3,7 @@ const { Bid } = require("../models");
 // Create a new Bid
 const createBid = async (req, res) => {
   try {
-    const bid = await Bid.create(req.body);
+    const bid = await Bid.create({ ...req.body, check: false });
     res.status(201).json(bid);
   } catch (error) {
     res.status(400).json({ error: error.message });
